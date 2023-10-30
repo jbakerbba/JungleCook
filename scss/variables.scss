@@ -1,0 +1,32 @@
+//site fonts
+$SR: "Segoe UI Regular";
+$SB: "Segoe UI Bold";
+$CB: "CaveatBold";
+$CR: "CaveatRegular";
+$LI: "LatoItalic";
+
+//site colors
+$yellow: #FFD972;
+$green: #A7E8BD;
+$white: white;
+$black: black;
+$lightPink: #FCBCB8;
+
+//site widths for media queries
+$pc: 1920px;
+$tablet: 768px;
+$phone: 390px;
+
+// -button sizes-
+
+// outlined button
+$outline-width: 222px;
+$outline-height: 68px;
+
+//solid button
+$solid-width: 170px;
+$solid-height: 45px;
+
+.bold {
+  font-family: $SB;
+}

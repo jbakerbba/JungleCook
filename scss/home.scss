@@ -1,0 +1,45 @@
+
+.homeWrapper {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .homeCircle {
+    height: 358px;
+    width: 358px;
+    border-radius: 350px;
+    background-color: $yellow;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      font-size: 24px;
+      font-family: $CR;
+    }
+    p {
+      width: 175px;
+      text-align: center;
+      padding-top: 25px;
+      font-size: 13px;
+    }
+  }
+  .homeCircleSmall {
+    height: 168px;
+    width: 168px;
+    border-radius: 160px;
+    background-color: $lightPink;
+    margin-bottom: 300px;
+    margin-left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 10px;
+      text-align: center;
+      padding: 30px;
+    }
+  }
+}

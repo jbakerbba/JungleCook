@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $SR;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+}
+
+.site-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url(../css/fonts/segoeui.ttf);
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url(../css/fonts/segoeuib.ttf);
+}
+
+@media (max-width: $tablet) {
+  * {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: $phone) {
+  * {
+    font-size: 6px;
+  }
+}
