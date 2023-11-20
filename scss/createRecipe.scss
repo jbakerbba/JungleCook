@@ -1,0 +1,99 @@
+.formHolder {
+    width: 900px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  
+  .formHolder input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-style: none;
+    border-bottom: 2px solid black;
+    padding-left: 5px;
+  }
+  
+  .formTop {
+    position: relative;
+  }
+  
+  .formTop .imageBtn {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: #EFA7A7;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    font-size: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: $CR;
+    font-size: 17px;
+  }
+  
+  .formDesc,
+  .formInstr {
+    margin-top: 100px;
+    position: relative;
+  }
+  
+  .submitbtn {
+    width: 420px;
+    height: 50px;
+    background-color: #EFA7A7;
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: $CR;
+    font-size: 25px;
+  }
+  
+  .addBtn {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #EFA7A7;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .addBtn2 {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #EFA7A7;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .formHolder {
+      margin: 50px;
+    }
+  }

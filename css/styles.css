@@ -10,6 +10,10 @@
   font-family: LatoItalic;
   src: url(../fonts/Lato-Italic.ttf);
 }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
 .bold {
   font-family: "Segoe UI Bold";
 }
@@ -18,7 +22,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI Regular";
   font-size: 16px;
 }
 
@@ -93,6 +96,13 @@ nav .links {
   border-radius: 50px;
 }
 
+.footWrap {
+  font-family: "CaveatRegular";
+}
+.footWrap a {
+  font-family: "CaveatRegular";
+}
+
 .homeWrapper {
   height: 800px;
   display: flex;
@@ -135,6 +145,11 @@ nav .links {
   font-size: 10px;
   text-align: center;
   padding: 30px;
+}
+
+#homeBody {
+  background-image: url(../images/hero.jpg);
+  background-position: center;
 }
 
 .account-wrapper {
@@ -268,6 +283,227 @@ footer .footWrap .socials .socIcon:hover {
     height: 15px;
     width: 15px;
   }
+}
+.formHolder {
+  width: 900px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.formHolder input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border-style: none;
+  border-bottom: 2px solid black;
+  padding-left: 5px;
+}
+
+.formTop {
+  position: relative;
+}
+
+.formTop .imageBtn {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: #EFA7A7;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  font-size: 12px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "CaveatRegular";
+  font-size: 17px;
+}
+
+.formDesc,
+.formInstr {
+  margin-top: 100px;
+  position: relative;
+}
+
+.submitbtn {
+  width: 420px;
+  height: 50px;
+  background-color: #EFA7A7;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "CaveatRegular";
+  font-size: 25px;
+}
+
+.addBtn {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: #EFA7A7;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.addBtn2 {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: #EFA7A7;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .formHolder {
+    margin: 50px;
+  }
+}
+.title h1 {
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 75px;
+}
+
+.browseWrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.browseWrapper .recipeCard {
+  width: 524px;
+  height: 263px;
+  display: flex;
+  margin-top: 50px;
+}
+.browseWrapper .recipeCard .recipeImg {
+  width: 60%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browseWrapper .recipeCard .recipeImg a {
+  padding: 10px 50px;
+  background-color: #FFD972;
+  color: black;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-family: "CaveatRegular";
+}
+.browseWrapper .recipeCard #spImg {
+  background-image: url(../images/recipe-pizza.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.browseWrapper .recipeCard #cbImg {
+  background-image: url(../images/recipe-burger.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.browseWrapper .recipeCard #cnImg {
+  background-image: url(../images/recipe-pilaf.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.browseWrapper .recipeCard #cmImg {
+  background-image: url(../images/recipe-chowmein.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.browseWrapper .recipeCard .recipeText {
+  width: 40%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.browseWrapper .recipeCard .recipeText h1 {
+  font-size: 15px;
+  text-decoration: underline;
+  text-align: left;
+}
+.browseWrapper .recipeCard .recipeText p {
+  font-size: 9px;
+  text-align: left;
+}
+.browseWrapper .recipeCard .recipeText .timeHolder {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.browseWrapper .recipeCard .recipeText .timeHolder .timeIcon {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/time.svg);
+}
+.browseWrapper .recipeCard .recipeText .timeHolder .timeText {
+  font-size: 10px;
+}
+.browseWrapper .recipeCard .recipeText .servingHolder {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.browseWrapper .recipeCard .recipeText .servingHolder .servingIcon {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/servings.svg);
+}
+.browseWrapper .recipeCard .recipeText .servingHolder .servingText {
+  font-size: 10px;
+}
+
+.btnWrapper {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+.btnWrapper a {
+  padding: 10px 30px;
+  background-color: #FFD972;
+  color: black;
+  border-radius: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-family: "CaveatRegular";
 }
 
 /*# sourceMappingURL=styles.css.map */

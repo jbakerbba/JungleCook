@@ -18,5 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenuIcon.addEventListener("click", function () {
         links.classList.toggle("show");
     });
+
+
+  });
+
+$(document).ready(function () {
+  initListeners();
 });
+
 

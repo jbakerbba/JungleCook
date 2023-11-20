@@ -10,6 +10,10 @@
     font-family: LatoItalic;
     src: url(../fonts/Lato-Italic.ttf);
 }
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
 @import "variables.scss";
 @import "structure.scss";
 @import "nav.scss";
@@ -18,3 +22,4 @@
 @import "footer.scss";
 @import "createRecipe.scss";
 @import "browse.scss";
+@import "yourRecipes.scss"

@@ -1,1 +1,66 @@
-<h1>create recipe</h1>
+<div class="formHolder">
+  <h1>Hey, create your recipe</h1>
+  <div class="formTop">
+    <div class="imageBtn">attach file</div>
+    <input id="imagePath" type="text" placeholder="Add Recipe Image" />
+    <input class="itemName" type="text" placeholder="Recipe Name" />
+    <input class="itemName" type="text" placeholder="Recipe Description" />
+    <input class="itemName" type="text" placeholder="Recipe Total Time" />
+    <input class="itemName" type="text" placeholder="Recipe Serving Size" />
+  </div>
+  <div class="formDesc">
+    <h2>Enter Ingredients:</h2>
+    <div id="ingredientContainer">
+      <input id="desc0" type="text" placeholder="Ingredient 1" />
+      <input id="desc1" type="text" placeholder="Ingredient 2" />
+      <input id="desc2" type="text" placeholder="Ingredient 3" />
+      <!-- Existing fourth line -->
+    </div>
+    <div class="addBtn" onclick="addIngredient()">+</div>
+  </div>
+  <div class="formInstr">
+    <h2>Enter Instructions:</h2>
+    <div id="instructionContainer">
+      <input id="instr0" type="text" placeholder="Instruction 1" />
+      <input id="instr1" type="text" placeholder="Instruction 2" />
+      <input id="instr2" type="text" placeholder="Instruction 3" />
+      <!-- Existing fourth line -->
+    </div>
+    <div class="addBtn2" onclick="addInstruction()">+</div>
+  </div>
+  <div class="submitbtn" onclick="createRecipe()">Create Recipe</div>
+
+  <script>
+    let ingredientCounter = 4;
+    let instructionCounter = 4;
+
+    function addIngredient() {
+      const newIngredientInput = document.createElement("input");
+      newIngredientInput.type = "text";
+      newIngredientInput.placeholder = `Ingredient ${ingredientCounter}`;
+      newIngredientInput.id = `desc${ingredientCounter}`;
+
+      document
+        .getElementById("ingredientContainer")
+        .appendChild(newIngredientInput);
+      ingredientCounter++;
+    }
+
+    function addInstruction() {
+      const newInstructionInput = document.createElement("input");
+      newInstructionInput.type = "text";
+      newInstructionInput.placeholder = `Instruction ${instructionCounter}`;
+      newInstructionInput.id = `instr${instructionCounter}`;
+
+      document
+        .getElementById("instructionContainer")
+        .appendChild(newInstructionInput);
+      instructionCounter++;
+    }
+
+    function createRecipe() {
+      // Your existing code for creating the recipe goes here
+      console.log("Recipe created!");
+    }
+  </script>
+</div>
