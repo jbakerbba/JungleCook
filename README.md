@@ -1,6 +1,3 @@
-# Homework Six
-
-This is the fifth homework assignment for N315.
-
+# Jungle Cook
 ## Web 4 Link:
-https://in-info-web4.informatics.iupui.edu/~bakejona/JungleCook/#login
+https://in-info-web4.informatics.iupui.edu/~bakejona/JungleCook-final/#home
